@@ -1,2 +1,2 @@
 # Bruna-patricia-desafio-catalisa
-bpnerd83@gmail.comatalisa 2022
+Desafio do Catalisa 2022 - Rick and Morty
