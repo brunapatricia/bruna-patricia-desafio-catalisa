@@ -41,7 +41,6 @@ text-transform: uppercase;
 #detalhes-container {
     font-weight: bold;
     list-style-type: nome;
-    height: 30px;
        width: 90%;
 
 }
