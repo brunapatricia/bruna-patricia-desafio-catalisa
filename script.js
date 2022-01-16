@@ -2,7 +2,7 @@ const imagem =document.querySelector('img');
 const botao =document.querySelector('button');
 const nomeDoPersonagem =document.querySelector('#nome');
 const especie =Document.querySelector('#especie');
-const status =document.querySelector('#status');
+const condicao =document.querySelector('#status');
 
 
 pegarPersonagem =() => {
@@ -16,6 +16,8 @@ pegarPersonagem =() => {
         imagem.src= data.image;
         imagem.alt= data.name;
         nomeDoPersonagem.innerHTML= data.nome;
+        especie.innerHTML= data.species;
+        condicao.innerHTML= datastatus;
     });
 
 }
