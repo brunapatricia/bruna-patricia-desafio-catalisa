@@ -1,4 +1,4 @@
-body{
+body{  
     background-image: linear-gradient(
         180edg,
         #6495ED 5%
@@ -42,6 +42,6 @@ text-transform: uppercase;
     font-weight: bold;
     list-style-type: nome;
     height: 30px;
-    width: 90%;
+       width: 90%;
 
 }
