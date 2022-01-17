@@ -52,9 +52,8 @@ pegarPersonagem =() => {
         nomeDoPersonagem2.innerHTML= data.nome;
         especie2.innerHTML= data.species;
         condicao2.innerHTML= datastatus;
-        )}
+        )};
 
-        
         pegarPersonagem =() => {
     let numeroAleatorio = gerarValorAleatorio();
     return fetch(`https://rickandmortyapi.com/api/character/${numeroAleatorio}`,{
