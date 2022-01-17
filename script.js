@@ -1,21 +1,19 @@
-const imagem =document.querySelector('img');
+const imagem =document.querySelector('#imagem');
 const botao =document.querySelector('button');
 const nomeDoPersonagem =document.querySelector('#nome');
 const especie =Document.querySelector('#especie');
 const condicao =document.querySelector('#status');
 
 
-const imagem2 =document.querySelector('img');
-const botao =document.querySelector('button');
-const nomeDoPersonagem2 =document.querySelector('#nome');
-const especie2 =Document.querySelector('#especie');
-const condicao2 =document.querySelector('#status');
+const imagem2 =document.querySelector('imagem2');
+const nomeDoPersonagem2 =document.querySelector('#nome2');
+const especie2 =Document.querySelector('#especie2');
+const condicao2 =document.querySelector('#status2');
 
-const imagem3 =document.querySelector('img');
-const botao =document.querySelector('button');
-const nomeDoPersonagem3 =document.querySelector('#nome');
-const especie3 =Document.querySelector('#especie');
-const condicao3 =document.querySelector('#status');
+const imagem3 =document.querySelector('#imagem3');
+const nomeDoPersonagem3 =document.querySelector('#nome3');
+const especie3 =Document.querySelector('#especie3');
+const condicao3 =document.querySelector('#status3');
 
 
 
@@ -39,7 +37,6 @@ pegarPersonagem =() => {
         condicao.innerHTML= datastatus;
     )};
     
-
 
     pegarPersonagem =() => {
     let numeroAleatorio = gerarValorAleatorio();
