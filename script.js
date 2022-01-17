@@ -15,7 +15,7 @@ const nomeDoPersonagem3 =document.querySelector('#nome3');
 const especie3 =Document.querySelector('#especie3');
 const condicao3 =document.querySelector('#status3');
 
-trsduzirCondicao = (data) => {
+traduzirCondicao = (data) => {
     if (data.status == 'unknown') {
         return 'Não sabemos'; 
     } else if (data.status == 'Alive') {
