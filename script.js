@@ -37,7 +37,7 @@ pegarPersonagem =() => {
           Acept: 'application/json',
           "Content-type": 'application/json'
       }
-    }).then((Response => response.json().then((data) => {
+    }).then((Response => response.json()).then((data) => {
         imagem.src= data.image;
         imagem.alt= data.name;
         nomeDoPersonagem.innerHTML= data.nome;
@@ -51,7 +51,7 @@ pegarPersonagem =() => {
           Acept: 'application/json',
           "Content-type": 'application/json'
       } 
-     }).then((Response => response.json().then((data) => {
+    }).then((Response => response.json()).then((data) => {
         imagem2.src= data.image;
         imagem.alt= data.name;
         nomeDoPersonagem2.innerHTML= data.nome;
