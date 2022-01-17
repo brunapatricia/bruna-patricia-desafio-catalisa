@@ -15,7 +15,15 @@ const nomeDoPersonagem3 =document.querySelector('#nome3');
 const especie3 =Document.querySelector('#especie3');
 const condicao3 =document.querySelector('#status3');
 
-
+trsduzirCondicao = (data) => {
+    if (data.status == 'unknown') {
+        return 'Não sabemos'; 
+    } else if (data.status == 'Alive') {
+        return 'Sim';      
+    } else {
+        return 'Não. Está morto';
+    }
+}
 
 gerarValorAleatorio= () => {
     return Math.floor(Math.random() * 674);
@@ -34,8 +42,8 @@ pegarPersonagem =() => {
         imagem.alt= data.name;
         nomeDoPersonagem.innerHTML= data.nome;
         especie.innerHTML= data.species;
-        condicao.innerHTML= datastatus;
-    )};
+        condicao.innerHTML=  traduzirCondicao(data);
+    
     
 
     pegarPersonagem =() => {
@@ -51,8 +59,7 @@ pegarPersonagem =() => {
         imagem.alt= data.name;
         nomeDoPersonagem2.innerHTML= data.nome;
         especie2.innerHTML= data.species;
-        condicao2.innerHTML= datastatus;
-        )};
+        condicao.innerHTML=  traduzirCondicao(data);
 
         pegarPersonagem =() => {
     let numeroAleatorio = gerarValorAleatorio();
@@ -62,13 +69,12 @@ pegarPersonagem =() => {
           Acept: 'application/json',
           "Content-type": 'application/json'
       }
-    }).then((Response => response.jason().then((data) => {
+    }).then((Response => response.jason()).then((data) => {
         imagem.src= data.image;
         imagem3.alt= data.name;
         nomeDoPersonagem3.innerHTML= data.nome;
         especie3.innerHTML= data.species;
-        condicao3.innerHTML= datastatus;
-    });
+        condicao.innerHTML=  traduzirCondicao(data);
 
 }
 
